@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+ 	
+ 	 <section>
+		 <div class="container">
+			<div class="loginUser Login">
+				<div class="left leftImg">
+					<img src="./image/2.jpg" alt="404">
+				</div>
+				<div class="right inputText">
+					 <form class="fromInput">
+							<h2>登录</h2>
+						    <input type="text" placeholder="用户名/邮箱/手机号">
+						    <input type="password" placeholder="密码">
+						    <input class="btn" type="submit" value="login">
+						    <p class="info">没有账号？点击这里 <a href="#" onclick="toggleClik()">注册</a></p>
+					 </form>
+				</div>
+			</div>
+
+			<!-- 注册 -->
+			<div class="Sign loginUser">
+				<div class="right inputText">
+					 <form class="fromInput">
+							<h2>注册</h2>
+						    <input type="text" placeholder="请输入用户名">
+						    <input type="email" placeholder="请输入邮箱">
+						    <input type="password" placeholder="请输入密码">
+						    <input type="password" placeholder="确认密码">
+						    <input class="btn" type="submit" value="注册">
+						    <p class="info">已有账号？点击这里 <a href="#" onclick="toggleClik()">登录</a></p>
+					 </form>
+				</div>
+				<div class="left leftImg">
+					<img src="./image/3.jpg" alt="404">
+				</div>
+			</div>
+		 </div>
+	 </section>
+
+	 <script>
+ 		function toggleClik(){
+ 			 var container = document.querySelector('.container');
+ 			 container.classList.toggle('active');
+ 		}
+	 </script>
+	
+</body>
+
+
+
+</html>
